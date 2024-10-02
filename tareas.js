@@ -6,8 +6,8 @@ const actualizarTareas = (tareas) => {
 }
 
 const render = () => {
-    mostrarLista = document.getElementById("mostrarLista");
-    listaTerminada = tareas.map((t, index) => `
+    let mostrarLista = document.getElementById("mostrarLista");
+    let listaTerminada = tareas.map((t, index) => `
         <li>
             ${t} 
             <input type="checkbox" class="hecho" id="checkbox-${index}">
